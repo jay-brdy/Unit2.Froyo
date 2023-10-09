@@ -6,7 +6,7 @@ const userInputString = prompt(
 
 
 function trackFroyoFlavors(userInputString) {
-    // // Split the string of flavors into an array of strings.
+    // Split the string of flavors into an array of strings.
     const stringArray = userInputString.split(",");
     // Empty object to track flavors
     const flavorsObject = {};
@@ -25,6 +25,5 @@ function trackFroyoFlavors(userInputString) {
     return flavorsObject;
 }
 
-// Calls the trackFroyoFlavors function and stores the result in flavorsObject
-const flavorsObject = trackFroyoFlavors(userInputString);
-console.log(flavorsObject);
+// Calls the trackFroyoFlavors function and logs it
+console.table(trackFroyoFlavors(userInputString));
